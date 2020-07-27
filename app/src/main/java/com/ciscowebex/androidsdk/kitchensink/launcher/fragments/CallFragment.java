@@ -330,8 +330,17 @@ public class CallFragment extends BaseFragment {
 
     @OnClick(R.id.buttonDTMF)
     public void onDTMF() {
-        if (isConnected)
-            keypad.setVisibility(keypad.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+//        if (isConnected)
+//            keypad.setVisibility(keypad.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+
+
+        remoteView.setVisibility(remoteView.getVisibility() == View.VISIBLE ? View.INVISIBLE : View.VISIBLE);
+
+        if (remoteView.getVisibility() == View.VISIBLE) {
+            Toast.makeText(getActivity(), "remoteView visibility changed to VISIBLE", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getActivity(), "remoteView visibility changed to INVISIBLE", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @OnClick({R.id.digit_0, R.id.digit_1, R.id.digit_2,

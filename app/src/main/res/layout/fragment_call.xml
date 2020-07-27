@@ -321,7 +321,7 @@
                     android:background="@android:color/holo_blue_light"
                     android:enabled="false"
                     android:layout_marginStart="16dp"
-                    android:text="DTMF"
+                    android:text="Change remote visibility"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
