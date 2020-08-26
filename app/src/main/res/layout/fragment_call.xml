@@ -34,7 +34,7 @@
     <com.ciscowebex.androidsdk.phone.MediaRenderView
         android:id="@+id/remoteView"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="400dp"
         android:layout_margin="8dp"
         android:elevation="1dp"
         app:layout_constraintLeft_toLeftOf="parent"

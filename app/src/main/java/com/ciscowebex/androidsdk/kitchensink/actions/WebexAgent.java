@@ -182,6 +182,8 @@ public class WebexAgent {
                     hangup();
                 } else {
                     activeCall.setObserver(callObserver);
+
+                    activeCall.setRemoteVideoRenderMode(Call.VideoRenderMode.Fit);
                 }
             }
             isDialing = false;
